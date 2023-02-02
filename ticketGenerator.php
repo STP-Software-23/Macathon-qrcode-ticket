@@ -22,7 +22,7 @@ function generateTicket($data,$dataID){
     imagecopy($originalImage, $logo_image, 350, 200, 0, 0, $logo_width, $logo_height);
     
     // Save the image with the text
-    imagejpeg($originalImage, 'assets/tickets/imgage.jpg');
+    imagejpeg($originalImage, 'assets/tickets/ticket'.$dataID.'.jpg');
     
     // Free up memory
     imagedestroy($originalImage);
