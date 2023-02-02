@@ -5,7 +5,7 @@ QRcodes will be saved `qrcode'ID'.png` where each user has an unique ID.
 - All tickets generated will be found in `assets/tickets`.  
 Tickets will be stored `ticket'ID'.jpg` where each user has a unique same that of qr.
 
-## functions 
+## Functions 
 
 <div style="width:50%;">
 <hr>
