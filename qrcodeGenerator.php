@@ -7,13 +7,12 @@ require_once('./lib/phpqrcode/qrlib.php');
 // ];
 
 function generateQR($data , $dataID){
-    $text = json_encode($data, JSON_PRETTY_PRINT);
-    $path = 'images/';
-    $filename = 'QRcodes/qrcode'.$dataID.'.png';
-    $level = QR_ECLEVEL_M;
-    $size = 5;
-    $margin = 4;
-    QRcode::png($text, $filename, $level, $size, $margin);
+
+
+        // qrcode of the user to be put on the ticket
+        $logo_image = imagecreatefrompng("assets/QRcodes/qrcode".$dataID.".png");
+        $logo_width = imagesx($logo_image);
+        $logo_height = imagesy($logo_image);
 }
 
 // generateQR($data,2)
